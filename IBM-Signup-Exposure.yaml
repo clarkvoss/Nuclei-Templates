@@ -1,6 +1,6 @@
-id: IBM friendly pah exposure
+id: IBM friendly path exposure
 info:
-  name: Finds friendly path exposed to Sign Up users
+  name: Finds friendly path exposed leads to User Sign-up
   author: Clark
   severity: meduim
 requests:
