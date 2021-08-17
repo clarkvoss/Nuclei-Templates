@@ -1,20 +1,19 @@
-id: config.xml database info
+id: Env Exposed
 info:
-  name: Search for config.xml
+  name: Find Exposed Env
   author: Clark
-  severity: medium
-
+  severity: meduim
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug/config.xml"
-
+      - "{{BaseURL}}/.env"
+    
     matchers-condition: and
     matchers:
-
       - type: word
         words:
-          - appSettings
+          - ADMIN_USER
+        condition: and
 
       - type: status
         status:

@@ -1,20 +1,19 @@
-id: config.xml database info
+id: wp-config backup Exposed
 info:
-  name: Search for config.xml
+  name: Find wp-config backup
   author: Clark
-  severity: medium
-
+  severity: meduim
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug/config.xml"
-
+      - "{{BaseURL}}/wp-config.php.bak"
+   
     matchers-condition: and
     matchers:
-
       - type: word
         words:
-          - appSettings
+          - dev
+        condition: and
 
       - type: status
         status:

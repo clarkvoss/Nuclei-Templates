@@ -1,20 +1,21 @@
-id: config.xml database info
+id: Backend Dev WorkFront Exposed
 info:
-  name: Search for config.xml
+  name: Find WorkFront Dev Backend
   author: Clark
   severity: medium
 
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug/config.xml"
+     - "{{BaseURL}}/backend_dev.php/"
+     - "{{BaseURL}}/backend.php"
 
     matchers-condition: and
     matchers:
 
       - type: word
         words:
-          - appSettings
+          - null
 
       - type: status
         status:

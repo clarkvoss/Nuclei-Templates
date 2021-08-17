@@ -1,20 +1,19 @@
-id: config.xml database info
+id: Letter Opener Web Exposed
 info:
-  name: Search for config.xml
+  name: Finds Letter Opener Web Exposed
   author: Clark
-  severity: medium
-
+  severity: meduim
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug/config.xml"
+      - "{{BaseURL}}/letter_opener/"
 
     matchers-condition: and
     matchers:
-
       - type: word
         words:
-          - appSettings
+          - letter opener
+        condition: and
 
       - type: status
         status:

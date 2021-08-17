@@ -1,18 +1,19 @@
-id: elmah.axd found in partnerportal
+id: Find adminer dashboard
 info:
-  name: Find partnerportal elmah.axd
+  name: Find adminer dashboard exposed
   author: Clark
   severity: meduim
+  #Server-side Request Forgery (SSRF) Try adminer.php?server=[payload]&username=123&password=123&db=123
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/MX/partnerportal/elmah.axd"
+      - "{{BaseURL}}/adminer.php"
     
     matchers-condition: and
     matchers:
       - type: word
         words:
-          - ELMAH
+          - Adminer
         condition: and
 
       - type: status

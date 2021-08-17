@@ -1,13 +1,13 @@
-id: config.xml database info
+id: Configuration displayed
 info:
-  name: Search for config.xml
+  name: Finds config for 
   author: Clark
   severity: medium
 
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug/config.xml"
+      - "{{BaseURL}}/CaseManager/welcome/displayCmisConfig.jsp"
 
     matchers-condition: and
     matchers:

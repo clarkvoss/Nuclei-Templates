@@ -1,18 +1,18 @@
-id: elmah.axd found in partnerportal
+id: Dashboard Exposed bypassing authentication
 info:
-  name: Find partnerportal elmah.axd
+  name: Find Exposed dashboard
   author: Clark
   severity: meduim
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/MX/partnerportal/elmah.axd"
-    
+      - "{{BaseURL}}/dashboard"
+
     matchers-condition: and
     matchers:
       - type: word
         words:
-          - ELMAH
+          - dashboard
         condition: and
 
       - type: status

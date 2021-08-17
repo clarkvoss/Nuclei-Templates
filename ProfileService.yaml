@@ -1,20 +1,20 @@
-id: config.xml database info
+id: Find ProfileService
 info:
-  name: Search for config.xml
+  name: Find WSLD Profile Service exposed
   author: Clark
-  severity: medium
-
+  severity: meduim
+  
 requests:
   - method: GET
     path:
-      - "{{BaseURL}}/debug/config.xml"
-
+      - "{{BaseURL}}/services/profileService"
+    
     matchers-condition: and
     matchers:
-
       - type: word
         words:
-          - appSettings
+          - soapenv
+        condition: and
 
       - type: status
         status:
