@@ -7,16 +7,21 @@ info:
 requests:
   - method: GET
     path:
-     - "{{BaseURL}}/backend_dev.php/"
-     - "{{BaseURL}}/backend.php"
+     - '{{BaseURL}}/backend_dev.php/'
+     - '{{BaseURL}}/backend.php'
 
     matchers-condition: and
     matchers:
 
       - type: word
         words:
-          - null
+          - 'null'
 
       - type: status
         status:
           - 200
+          
+      - type: word
+        words:
+          - 'text/html'
+        part: header
