@@ -1,7 +1,7 @@
-id: LiveSites TeamSite database info exposed
+id: OpenText LiveSites TeamSite database info exposed
 
 info:
-  name: LiveSite TeamSite database info exposed.
+  name: OpenText LiveSite TeamSite database info exposed.
   author: Clark
   severity: medium
   description: Can find database connection info.
