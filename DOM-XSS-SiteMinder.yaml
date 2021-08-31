@@ -22,7 +22,7 @@ requests:
 
       - type: word
         words:
-          - 'confirm'
+          - 'confirm(1)'
 
       - type: word
         words:
