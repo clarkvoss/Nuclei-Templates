@@ -22,7 +22,7 @@ requests:
 
       - type: word
         words:
-          - 'confirm(1)'
+          - 'confirm(document.domain)'
 
       - type: word
         words:
