@@ -11,11 +11,10 @@ requests:
       - "{{BaseURL}}/.git/COMMIT_EDITMSG"
       - "{{BaseURL}}/.git/index"
       - "{{BaseURL}}/.git/logs/refs/heads/master"
-      - "{{BaseURL}}/.git/config"
       - "{{BaseURL}}/config.php~"
       - "{{BaseURL}}/.git/COMMIT_EDITMSG"
       - "{{BaseURL}}/.git/config"
-      - "{{BaseURL}}/.git/FETCH_HEAD
+      - "{{BaseURL}}/.git/FETCH_HEAD"
       - "{{BaseURL}}/.git/logs/refs/remotes/origin/master"
       - "{{BaseURL}}/.git/refs/heads/master"
       - "{{BaseURL}}/.git/refs/remotes/origin/master"
@@ -28,7 +27,7 @@ requests:
       - "{{BaseURL}}/.git/description"
       - "{{BaseURL}}/.gitignore"
       - "{{BaseURL}}/.git/refs/tags"
-      - "{{BaseURL}}/.git/packed-refs
+      - "{{BaseURL}}/.git/packed-refs"
 
     matchers-condition: and
     matchers:
@@ -41,10 +40,8 @@ requests:
           - 'root'
           - 'commint'
           - 'git'
+          - 'COMMIT_EDITMSG'
           - 'pack-refs'
-        part: body
+          - 'gitignore'
 
-      - type: word
-        words:
-          - 'text/html'
-        part: header
+        part: body
