@@ -15,13 +15,8 @@ requests:
 
       - type: word
         words:
-          - 'null'
+          - 'backend_dev.php'
 
       - type: status
         status:
           - 200
-          
-      - type: word
-        words:
-          - 'text/html'
-        part: header
