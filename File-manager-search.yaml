@@ -9,7 +9,7 @@ requests:
       - "{{BaseURL}}/editor/editor/filemanager/browser/default/js/fckxml.js"
       - "{{BaseURL}}/editor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.php"
       - "{{BaseURL}}/editor/editor/filemanager/connectors/php/upload.php"
-      - "{{BaseURL}}editor/editor/filemanager/browser/default/browser.html"
+      - "{{BaseURL}}/editor/editor/filemanager/browser/default/browser.html"
     
     matchers-condition: and
     matchers:
