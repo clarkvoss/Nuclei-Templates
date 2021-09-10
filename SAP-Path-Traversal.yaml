@@ -18,3 +18,8 @@ requests:
         words:
           - "Build"
         part: body
+        
+         - type: word
+        words:
+          - 'text/plain'
+        part: header
