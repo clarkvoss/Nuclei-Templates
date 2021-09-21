@@ -1,7 +1,7 @@
 id: IBM friendly path exposure
 info:
   name: Finds friendly path exposed leads to user sign-up page
-  author: Clark
+  author: Clark Voss
   severity: meduim
   reference: https://clarkvoss.medium.com/how-to-harpon-big-blue-c163722638d8
   
