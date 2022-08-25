@@ -20,7 +20,7 @@ requests:
         status:
           - 200
           
-           - type: word
+      - type: word
         words:
           - 'text/plain'
         part: header
